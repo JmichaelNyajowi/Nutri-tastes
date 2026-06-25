@@ -58,8 +58,24 @@ body {
   color: #555;
 }
 /* ******************** */
-/* GENERAL COMPONENTS */
+/* GENERAL REUSABLE COMPONENTS */
 /* ******************** */
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+.grid--2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--4cols {
+  grid-template-columns: repeat(4, 1fr);
+}
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
@@ -204,4 +220,12 @@ header {
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/******************** */
+/* HOW IT WORKS */
+/* ******************** */
+.section-how {
+  padding: 9.6rem 0;
+  background-color: orangered;
 }
